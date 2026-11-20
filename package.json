@@ -1,0 +1,19 @@
+{
+  "name": "bomb-tag",
+  "private": true,
+  "type": "module",
+  "description": "Bomb Tag: a browser game written by Gemini in Canvas as one HTML file, made online multiplayer on Edgegap",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "split": "node tools/split-artifact.mjs artifact/bomb-tag.html",
+    "check:rules": "node tools/split-artifact.mjs artifact/bomb-tag.html --check",
+    "server": "node server/main.js",
+    "client": "npx -y http-server client -p 8080 -c-1",
+    "test:local": "npm run check:rules && node tests/local-match.mjs",
+    "e2e": "node tests/e2e.mjs bomb-tag 2"
+  },
+  "dependencies": {
+    "@edgegap/sdk": "^1.1.0",
+    "ws": "^8.22.1"
+  }
+}
