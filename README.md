@@ -39,7 +39,7 @@ both tabs closing). Cost of a match: one 0.25 vCPU server for about a minute.
 - A GitHub repo. GitHub Actions builds the server image, so you don't need Docker on your computer.
 - Node.js 22 to run the split script and the local tests.
 - Optional but recommended: an AI coding agent with the Edgegap MCP server connected
-  (`https://mcp.edgegap.dev`). Its `edgegap-chat-canvas` skill holds the prompt, the split script, the
+  (`https://mcp.edgegap.com/mcp`). Its `edgegap-chat-canvas` skill holds the prompt, the split script, the
   server templates, the matchmaker config and the tests used here.
 
 ## Values you will fill in
